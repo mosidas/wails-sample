@@ -1,1 +1,12 @@
-create table account(id, name, password, birthday, email, phone, created_at);
+drop table account;
+
+create table account( 
+    id integer primary key
+    , name text
+    , password text
+    , birthday text
+    , email text
+    , phone text
+    , created_at text
+);
+
