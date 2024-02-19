@@ -55,6 +55,20 @@ const Menu1 = () => {
         enableColumnFilter: true,
         editable: true,
       },
+      {
+        accessorKey: "Birthday",
+        header: "Birthday",
+        enableSorting: true,
+        enableColumnFilter: true,
+        editable: true,
+      },
+      {
+        accessorKey: "CreatedAt",
+        header: "Created At",
+        enableSorting: true,
+        enableColumnFilter: true,
+        editable: false,
+      },
     ],
     []
   );
