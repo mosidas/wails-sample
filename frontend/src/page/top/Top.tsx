@@ -26,19 +26,19 @@ const main = css`
 `;
 
 const Top = () => {
-  const [menu, setMenu] = useState(<Menu1 />);
+	const [menu, setMenu] = useState(<Menu1 />);
 
-  return (
-    <div css={container}>
-      <div css={side}>
-        <SideMenu setMenu={setMenu} />
-      </div>
-      <div css={main}>
-        <MenuBase menu={menu} />
-        {/* <Menu1 /> */}
-      </div>
-    </div>
-  );
+	return (
+		<div css={container}>
+			<div css={side}>
+				<SideMenu setMenu={setMenu} />
+			</div>
+			<div css={main}>
+				<MenuBase menu={menu} />
+				{/* <Menu1 /> */}
+			</div>
+		</div>
+	);
 };
 
 export default Top;

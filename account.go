@@ -9,13 +9,13 @@ import (
 )
 
 type Account struct {
-	ID        int
-	Name      string
-	Password  string
-	Birthday  time.Time
-	EMail     string
-	Phone     string
-	CreatedAt time.Time
+	Id        int       `json:"id"`
+	Name      string    `json:"name"`
+	Password  string    `json:"password"`
+	Birthday  time.Time `json:"birthday"`
+	EMail     string    `json:"email"`
+	Phone     string    `json:"phone"`
+	CreatedAt time.Time `json:"createdAt"`
 }
 
 func NewAccount() *Account {
@@ -57,7 +57,7 @@ func (a *Accountlogic) LoadAcconts() []Account {
 		}
 		c, _ := time.Parse("2006-01-02T15:04:05", createdAt)
 		account := Account{
-			ID:        id,
+			Id:        id,
 			Name:      name,
 			Password:  password,
 			Birthday:  b,

@@ -4,7 +4,7 @@ import Menu1 from "./Menu1";
 import Menu2 from "./Menu2";
 import Menu3 from "./Menu3";
 import Menu4 from "./Menu4";
-import { EmotionJSX } from "@emotion/react/types/jsx-namespace";
+import type { EmotionJSX } from "@emotion/react/types/jsx-namespace";
 
 const style = css`
   background-color: #f0f0f0;
@@ -31,32 +31,32 @@ const menuButton = css`
 `;
 
 const SideMenu = (props: {
-  setMenu: React.Dispatch<React.SetStateAction<EmotionJSX.Element>>;
+	setMenu: React.Dispatch<React.SetStateAction<EmotionJSX.Element>>;
 }) => {
-  return (
-    <div css={style}>
-      <div css={manuIcon}>
-        <button css={menuButton} onClick={() => props.setMenu(<Menu1 />)}>
-          menu1
-        </button>
-      </div>
-      <div css={manuIcon}>
-        <button css={menuButton} onClick={() => props.setMenu(<Menu2 />)}>
-          menu2
-        </button>
-      </div>
-      <div css={manuIcon}>
-        <button css={menuButton} onClick={() => props.setMenu(<Menu3 />)}>
-          menu3
-        </button>
-      </div>
-      <div css={manuIcon}>
-        <button css={menuButton} onClick={() => props.setMenu(<Menu4 />)}>
-          menu4
-        </button>
-      </div>
-    </div>
-  );
+	return (
+		<div css={style}>
+			<div css={manuIcon}>
+				<button type="button" css={menuButton} onClick={() => props.setMenu(<Menu1 />)}>
+					menu1
+				</button>
+			</div>
+			<div css={manuIcon}>
+				<button type="button" css={menuButton} onClick={() => props.setMenu(<Menu2 />)}>
+					menu2
+				</button>
+			</div>
+			<div css={manuIcon}>
+				<button type="button" css={menuButton} onClick={() => props.setMenu(<Menu3 />)}>
+					menu3
+				</button>
+			</div>
+			<div css={manuIcon}>
+				<button type="button" css={menuButton} onClick={() => props.setMenu(<Menu4 />)}>
+					menu4
+				</button>
+			</div>
+		</div>
+	);
 };
 
 export default SideMenu;

@@ -25,11 +25,11 @@ const logoStyle = css`
 `;
 
 function App() {
-  return (
-    <div>
-      <Top />
-    </div>
-  );
+	return (
+		<div>
+			<Top />
+		</div>
+	);
 }
 
 export default App;
