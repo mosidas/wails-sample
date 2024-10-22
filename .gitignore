@@ -8,7 +8,6 @@ frontend/dist
 **/.npmrc
 .tags*
 .vs/
-.vscode/
 *.log
 *.pyc
 *.sln

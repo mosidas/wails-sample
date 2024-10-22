@@ -14,7 +14,7 @@ var assets embed.FS
 func main() {
 	// Create an instance of the app structure
 	app := NewApp()
-	accountLogic := &Accountlogic{}
+	accountLogic := &AccountLogic{}
 
 	// Create application with options
 	err := wails.Run(&options.App{

@@ -22,12 +22,12 @@ func NewAccount() *Account {
 	return &Account{}
 }
 
-type Accountlogic struct {
+type AccountLogic struct {
 }
 
-func (a *Accountlogic) LoadAcconts() []Account {
-	fmt.Println("LoadAcconts")
-	db, err := sql.Open("sqlite3", "./mydb.db")
+func (a *AccountLogic) LoadAccounts() []Account {
+	fmt.Println("LoadAccounts")
+	db, err := sql.Open("sqlite3", "./myDb.db")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -71,7 +71,7 @@ func (a *Accountlogic) LoadAcconts() []Account {
 	return ret
 }
 
-func (a *Accountlogic) SaveAccount(account Account) {
+func (a *AccountLogic) SaveAccount(account Account) {
 	fmt.Println("SaveAccount")
 	fmt.Println(account)
 }
